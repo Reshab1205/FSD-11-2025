@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p id="demo"></p>
+        <h2>Registration Form</h2>
+        <label>FullName: </label>
+        <input id="fname" type="text" placeholder="Enter Your Full Name ......" />
+        <br>
+        <label>Email: </label>
+        <input id="email" type="email" placeholder="Enter Your Email  ......" />
+        <br>
+        <label>Password: </label>
+        <input id="password" type="password" placeholder="Enter Your Password  ......" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*_=+-\]).{8,16}" />
+        <br>
+        <label>Mobile Number: </label>
+        <input id="mobile_number" type="text" placeholder="Enter Your Mobile Number  ......" pattern="^[6-9]\d{9}$" />
+        <br>
+        <button onclick="register(event)">Register</button>
+    </form>
+</body>
+<script>
+
+    function register(event) {
+        event.preventDefault()
+        const fname = document.getElementById('fname').value
+        const email = document.getElementById('email').value
+        const password = document.getElementById('password').value
+        const mob = document.getElementById('mobile_number').value
+
+        const data = {
+            full_name: fname,
+            email: email,
+            password: password,
+            mobile_number: mob
+        }
+        // console.log(data)
+
+
+
+
+    }
+</script>
+
+</html>

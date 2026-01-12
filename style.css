@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: aquamarine;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSByEPDr9KVC8LAgxc3OttFlz0A7FSUhofw&s");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .p1 {
+    color: aqua;
+    background-color: blueviolet;
+} */
+
+
+p {
+    background-color: greenyellow;
+    border: 2px solid black;
+    border-style: double;
+    margin: 20px;
+    padding: 20px 10px 15px 5px;
+    background-clip: border-box;
+    height: 32vh;
+    width: 20%;
+    
+
+    /* margin:0 */
+
+}
+
+/* #h1 {
+    background-color: brown;
+    
+} */
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre {
+    text-shadow: 2px 2px 3px red, 1px 1px 2px blue;
+}
