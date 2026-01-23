@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Reshab</td>
+            <td>27</td>
+            <td>Vaishali</td>
+        </tr>
+        <tr>
+            <td>Reshab</td>
+            <td>27</td>
+            <td>Vaishali</td>
+        </tr>
+        <tr>
+            <td>Reshab</td>
+            <td>27</td>
+            <td>Vaishali</td>
+        </tr>
+        
+    </table>
+    <button onclick="changeCSS()">Click</button>
+    <br>
+    <div style="height: 50vh; width: 100%;" id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.avif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.avif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<Stack spacing={2} direction="row" sx={{ alignItems: 'center', mb: 1 }}>
+  <VolumeDown />
+  <Slider aria-label="Volume" value={value} onChange={handleChange} />
+  <VolumeUp />
+</Stack>
+<Slider disabled defaultValue={30} aria-label="Disabled slider" />
+
+    
+  
+
+</body>
+<script>
+    function changeCSS() {
+        document.getElementById('table').style.borderCollapse = 'collapse'
+        
+
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://mui.com/material-ui/react-slider/#ContinuousSlider.js"></script>
+</html>
